@@ -67,9 +67,9 @@ Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar
 
 ## Instalasi
 
-*PHP 8.0.30 & Apache
-*Database (MySql)
-*Web Browser (Chrome)
+* PHP 8.0.30 & Apache
+* Database (MySql)
+* Web Browser (Chrome)
 
 ## Instalasi
 
