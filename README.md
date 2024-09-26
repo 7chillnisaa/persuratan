@@ -1,40 +1,55 @@
 ## Konsep Website Yang Dibuat
 
-Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar, seperti surat yang datang ke kantor dinas
+Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar, seperti surat yang masuk ke kantor dinas
 
 ## Fitur Yang Tersedia
 
 * Halaman Awal
-      -Dashboard
-      -Persuratan
 
-* Authentication
-      -Login
+    * Dashboard
   
+    * Persuratan
+      
+* Autentikasi
+
+  * Login
+
 * Pengguna
 
-    -Login: Pengguna dapat masuk ke akun mereka.
-    -Lihat Surat: Menampilkan daftar surat yang telah dibuat.
-    -Buat Surat: Fitur untuk membuat surat baru.
-    -Edit Surat: Mengubah isi surat yang sudah ada.
-    -Hapus Surat: Menghapus surat yang tidak diperlukan.
+    * Login: Pengguna dapat masuk ke akun mereka.
+  
+    * Lihat Surat: Menampilkan daftar surat yang telah dibuat.
+  
+    * Buat Surat: Fitur untuk membuat surat baru.
+  
+    * Edit Surat: Mengubah isi surat yang sudah ada.
+  
+    * Hapus Surat: Menghapus surat yang tidak diperlukan.
+  
   
 * Admin
 
-    -Lihat Dasbor: Menampilkan statistik penggunaan dan aktivitas pengguna.
-    -Kelola Pengguna: Menambah, mengedit, atau menghapus akun pengguna.
+    * Lihat Dasbor: Menampilkan statistik penggunaan dan aktivitas pengguna.
+  
+    * Kelola Pengguna: Menambah, mengedit, atau menghapus akun pengguna.
 
 * Langkah Terakhir
-    -Logout
+  
+    * Logout
 
 ## Akun Delfaut
 
 * Admin
-    -Email : admin@gmail.com
-    -Password : 12345
+  
+    * Email : admin@gmail.com
+  
+    * Password : 12345
+  
 * User
-    -Email : yg_treasure@gmail.com
-    -Password : treasure10
+  
+    * Email : yg_treasure@gmail.com
+  
+    * Password : treasure10
 
 ##ERD
 
@@ -42,7 +57,7 @@ Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar
 
 ## Use Case Diagram
 
-![persuratan](https://github.com/user-attachments/assets/c1187063-0b62-41b8-9272-51645e59d2b4)
+![Screenshot (7)](https://github.com/user-attachments/assets/2447d663-2628-4a4c-b4ef-9ac734918ca0)
 
 
 ## Teknologi Yang Digunakan
@@ -52,9 +67,9 @@ Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar
 
 ## Instalasi
 
--PHP 8.0.30 & Apache
--Database (MySql)
--Web Browser (Chrome)
+*PHP 8.0.30 & Apache
+*Database (MySql)
+*Web Browser (Chrome)
 
 ## Instalasi
 
@@ -64,44 +79,18 @@ Website yang saya buat ini dirancang untuk mengelola surat yang masuk dan keluar
    composer install
    cp .env.example .env
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+2. Konfigurasi Database Pada File .env
+   ```bash
+   DB_DATABASE=persuratanDkp
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+3. Melakukan Migrasi dan Menyambungkan Storage
+   ```bash
+   php artisan key:generate
+   php artisan storage:link
+   php artisan migrate --seed
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. Mulai SItus Web
+   ```bash
+   php artisan serve
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+persuratan dibuat oleh **[Nisa Rahmaniar](https://www.instagram.com/nissaash_/)**
